@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title> Sleep</title>
+    <link rel="icon" href="assets/intro.png" />
+    <link href='styles/styles.css' rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Luckiest+Guy&family=Signika:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
+
+
+<!-- body -->
+
+<body style="background-color:#c9ddde;">
+        <img id='sleep' src="assets/sleep.png" width="400">
+        <p class="convo">Maybe I can take a nap in the principal's office. <br><br> She has a really
+            nice <a class="text-decoration-none" href="#" onclick="nextLine()">sofa</a></p>
+    <!--click sofa, invoke function that adds new dialog in the body without changing the entire page -->
+    <script>
+        function nextLine() {
+            document.body.innerHTML = (
+                `
+                <img id='sleep' src="assets/sleep.png" width="400">
+                    <p class="convo">Maybe I can take a nap in the principal's office. <br><br> She has a really nice sofa
+                    <br>
+                    <br>
+                    Mommy has <a id='pickup' href='pickup.html' class="text-decoration-none">ARRIVED</a>!</p>`
+
+            );
+        }
+    </script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

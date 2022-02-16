@@ -1,0 +1,33 @@
+h1{
+    padding: 10;
+}
+body{
+    text-align: center;
+}
+
+#intro{
+    width: 600;
+    height: 400;
+}
+
+#pickup{
+    padding-top: 40;
+}
+
+.dialog{
+    padding-top: 20;
+    font-family: 'Luckiest Guy', cursive;
+}
+.warning{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30;
+    font-weight: bold;
+
+}
+.convo{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25;
+    font-weight: bold;
+
+   
+}

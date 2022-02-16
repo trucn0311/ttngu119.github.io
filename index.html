@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Intro</title>
+    <link rel="icon" href="assets/intro.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Luckiest+Guy&family=Signika:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link href='styles/styles.css' rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-icons.css">
+</head>
+
+
+<!--Body-->
+
+<body style="background-color:#c9ddde;">
+    <h1 class='dialog'>Ways to go home</h1>
+    <p class='convo'>By Truc Nguyen</p>
+    <img  src='assets/intro.png' width="450">
+    <br>
+    <br>
+    <!-- start button -->
+
+        <a id='start' href='#' class=" text-decoration-none convo" onclick='start()'> START </a>
+    <!-- invoke a script function when users click start which overwrites the entire HTML document body-->
+    <script>
+        function start() {
+            document.body.innerHTML = (
+                ` <img id='intro' src='assets/intro.png' width="600">
+            <br>
+            <p class="convo">Seems like mom forgot about me again. <br> Hmmm....what should I do?</p>
+            <a id='stay' href='#' onclick='spareTime()' class=" text-decoration-none convo">WAIT FOR MOMMY</a>
+            <br>
+            <a id='leave' href='cobb.html' class=" text-decoration-none convo">LEAVE</a>`
+
+            );
+        }
+        /*invoke another function overwrites the html document inside the start() function*/
+        function spareTime() {
+            document.body.innerHTML = (
+                ` <img id='intro' src='assets/intro.png' width="600">
+                <div>
+                    <p class="convo">It's probably gonna take a while. I'll just go ...</p>
+                    <a id='study' href='study.html' class=" text-decoration-none convo">DO HOMEWORK</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                     <a id='sleep' href='sleep.html' class=" text-decoration-none convo">TAKE A NAP</a>
+                </div> `
+            );
+        }
+
+    </script>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
